@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
 </head>
 <body>
-    <h1>Survey Form</h1>
-    <h2>Fill</h2>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to answer this form</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Insert your name: <input type="text" name="name" id="name" required placeholder="Name"></label>
+        <label for="email" id="email-label">Now your e-mail: <input type="email" name="mail" id="email" required placeholder="Valid Mail"></label>
+        <label for="number" id="number-label">And now, your age: <input type="number" name="number" id="number" placeholder="1-120" pattern="\d+" min="1" max="120" required></label>
+        <select name="dropdown" id="dropdown"><option value="-">(select gender)</option><option value="M">Male</option><option value="F">Female</option></select>
+        <input type="radio" name="opt1" id="name1" value="Option 1"> Option 1-1
+        <input type="radio" name="opt1" id="name1" value="Option 1"> Option 1-2
+        <input type="radio" name="opt2" id="name2" value="Option 2"> Option 2-1
+        <input type="radio" name="opt2" id="name2" value="Option 2"> Option 2-2
+        <input type="checkbox" value="ch1" id="chb"> Chk1
+        <input type="checkbox" value="ch2" id="chb"> Chk2
+        <input type="checkbox" value="ch3" id="chb"> Chk3
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <input type="submit" value="Submit" id="submit">
+    </form>
 </body>
 </html>
