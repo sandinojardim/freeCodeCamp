@@ -14,14 +14,14 @@
         <label for="name" id="name-label">Insert your name: <input type="text" name="name" id="name" required placeholder="Name"></label>
         <label for="email" id="email-label">Now your e-mail: <input type="email" name="mail" id="email" required placeholder="Valid Mail"></label>
         <label for="number" id="number-label">And now, your age: <input type="number" name="number" id="number" placeholder="1-120" pattern="\d+" min="1" max="120" required></label>
-        <select name="dropdown" id="dropdown"><option value="-">(select gender)</option><option value="M">Male</option><option value="F">Female</option></select>
-        <input type="radio" name="opt1" id="name1" value="Option 1"> Option 1-1
-        <input type="radio" name="opt1" id="name1" value="Option 1"> Option 1-2
-        <input type="radio" name="opt2" id="name2" value="Option 2"> Option 2-1
-        <input type="radio" name="opt2" id="name2" value="Option 2"> Option 2-2
-        <input type="checkbox" value="ch1" id="chb"> Chk1
-        <input type="checkbox" value="ch2" id="chb"> Chk2
-        <input type="checkbox" value="ch3" id="chb"> Chk3
+        <label for="number" id="number-label">Gender now: <select name="dropdown" id="dropdown" class="opt"><option value="-">(select gender)</option><option value="M">Male</option><option value="F">Female</option></select>
+        <label for="name1" class="inline"><input type="radio" name="opt1" id="name1" value="Option 1"> Option 1-1</label>
+        <label for="name1" class="inline"><input type="radio" name="opt1" id="name1" value="Option 1"> Option 1-2</label>
+        <label for="name2" class="inline"><input type="radio" name="opt2" id="name2" value="Option 2"> Option 2-1</label>
+        <label for="name2" class="inline"><input type="radio" name="opt2" id="name2" value="Option 2"> Option 2-2</label>
+        <label for="name1" class="inline"><input type="checkbox" value="ch1" id="chb"> Chk1</label>
+        <label for="name1" class="inline"><input type="checkbox" value="ch2" id="chb"> Chk2</label>
+        <label for="name1" class="inline"><input type="checkbox" value="ch3" id="chb"> Chk3</label>
         <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         <input type="submit" value="Submit" id="submit">
     </form>
